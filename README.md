@@ -1,10 +1,15 @@
+
 # 🕹️ Retro Vending Node Terminal
 
 ### Vend | Track | Analyze
 
-**Retro Vending Node** is a futuristic vending machine simulator that blends arcade-style UI with real-time telemetry tracking — built with **Python Flask, SQLite, and Tailwind CSS**.
+**Retro Vending Node** is a futuristic vending machine simulator that blends an arcade-style UI with real-time telemetry tracking — built with **Python Flask, SQLite, and Tailwind CSS**. 
+
+> 💡 **Dynamic Terminal Header:** The main terminal title text is now served dynamically! It updates via the backend API or frontend JavaScript cycles rather than being hardcoded into the static HTML layout.
 
 ---
+
+## 📂 Project Structure
 
 ## 📂 Project Structure
 
