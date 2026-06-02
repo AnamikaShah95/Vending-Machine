@@ -6,33 +6,6 @@
 
 ---
 
-## ✨ Features
-
-| Feature | Description |
-|----------|--------------|
-| 🎮 Arcade UI | Neon-styled retro interface with interactive vending cart |
-| 🔄 Real-Time Sync | Prevents double-purchases with live stock tracking |
-| 💾 SQLite Persistence | Keeps transaction history safe across reloads |
-| 📊 Telemetry | Background diagnostics every 4s |
-| 💸 Coin System | Drag & drop Rs.10 / Rs.50 tokens to purchase items |
-
----
-
-## ⚡ Installation
-
-```bash
-# 1. Clone the repository
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-# 2. Install dependencies
-pip install flask flask-cors flask-sqlalchemy
-
-# 3. Run the app
-python app.py
-
----
-
 ## 📂 Project Structure
 
 ```bash
@@ -44,6 +17,18 @@ retro-vending-node/
 ├── vending_machine.db  # SQLite database (auto-generated)
 ├── requirements.txt    # Dependencies
 └── README.md           # Documentation
+```
+---
+
+## ✨ Features
+
+| Feature | Description |
+|----------|--------------|
+| 🎮 Arcade UI | Neon-styled retro interface with interactive vending cart |
+| 🔄 Real-Time Sync | Prevents double-purchases with live stock tracking |
+| 💾 SQLite Persistence | Keeps transaction history safe across reloads |
+| 📊 Telemetry | Background diagnostics every 4s |
+| 💸 Coin System | Drag & drop Rs.10 / Rs.50 tokens to purchase items |
 
 ---
 
@@ -69,5 +54,22 @@ After starting the Flask server (`python app.py`), open your browser and go to:
 - Insert Rs.60 → Vend Milkshake  
 
 ---
+
+## ⚡ Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+
+# 2. Install dependencies
+pip install flask flask-cors flask-sqlalchemy
+
+# 3. Run the app
+python app.py
+
+---
+
+
 
 
