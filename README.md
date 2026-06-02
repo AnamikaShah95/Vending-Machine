@@ -1,54 +1,73 @@
-========================================================================
-PROJECT SYSTEM MANIFEST: RETRO VENDING NODE TERMINAL (COMPLETE UNIFIED TEXT)
-========================================================================
-Description: This unified text file compiles every single detail, setup guide,
-and full configuration files into a single master document.
-========================================================================
-
-========================================================================
-PART 1: PROJECT OVERVIEW & DOCUMENTATION (README.md)
-========================================================================
-
 # 🕹️ Retro Vending Node Terminal
 
-A professional-grade, polyglot-ready automated vending interface built to simulate responsive hardware device interactions. This system couples an interactive, retro-themed arcade frontend UI with a lightweight relational telemetry tracking engine. 
+### Vend | Track | Analyze
+
+**Retro Vending Node** is a futuristic vending machine simulator that blends arcade-style UI with real-time telemetry tracking — built with **Python Flask, SQLite, and Tailwind CSS**.
 
 ---
 
-## ⚡ Core Engine Features
+## ✨ Features
 
-* **Multi-Item Real-Time Synchronization:** Tracks live product stock schemas locally within the client state registry, automatically blocking phantom double-purchases before hitting network endpoints.
-* **Persistent SQLite Tracking Matrix:** Built with file-backed storage arrays to ensure historical analytical datasets survive active runtime service reloads.
-* **Dynamic Interactive Overlay Popups:** Features real-time state listeners that intercept remaining unspent currency balances to display dedicated refund and vended asset tracking notification modals.
-* **Hardware Telemetry Stream Simulator:** Background execution loops fetch hardware environmental diagnostics periodically every 4,000ms.
-
----
-
-## 🛠️ System Technology Stack
-
-| Layer | Component Technology | Purpose / Application |
-| :--- | :--- | :--- |
-| **Frontend** | HTML5 / JavaScript (ES6+) | Direct client-side state manipulation & asynchronous event processing loops |
-| **Styling** | Tailwind CSS CDN / CRT Matrix | Atomic styling engine rendering retro arcade layout aesthetics |
-| **Backend** | Python / Flask microservice | Exposes REST API pipelines and processes relational telemetry validations |
-| **Database** | Flask-SQLAlchemy / SQLite | Models structural transaction schemas and keeps inventory tracking safe |
-| **External** | QRCode.js Library | Generates clean client-side dynamic payload streams for UPI routing |
+| Feature | Description |
+|----------|--------------|
+| 🎮 Arcade UI | Neon-styled retro interface with interactive vending cart |
+| 🔄 Real-Time Sync | Prevents double-purchases with live stock tracking |
+| 💾 SQLite Persistence | Keeps transaction history safe across reloads |
+| 📊 Telemetry | Background diagnostics every 4s |
+| 💸 Coin System | Drag & drop Rs.10 / Rs.50 tokens to purchase items |
 
 ---
 
-## 🚀 Step-by-Step Execution Guide
+## ⚡ Installation
 
-### 1. Environment Setup & Component Installation
-Open your terminal with administrative privileges and install the necessary dependencies:
 ```bash
+# 1. Clone the repository
+git clone https://github.com/<your-username>/<your-repo>.git
+cd <your-repo>
+
+# 2. Install dependencies
 pip install flask flask-cors flask-sqlalchemy
 
-# Windows
-del vending_machine.db
+# 3. Run the app
 python app.py
 
-# Mac / Linux
-rm -f vending_machine.db
-python app.py
+---
+
+## 📂 Project Structure
+
+```bash
+retro-vending-node/
+│
+├── app.py              # Flask backend service
+├── static/             # Frontend assets (HTML, CSS, JS)
+├── templates/          # UI templates
+├── vending_machine.db  # SQLite database (auto-generated)
+├── requirements.txt    # Dependencies
+└── README.md           # Documentation
+
+---
+
+## 🚀 Usage
+
+After starting the Flask server (`python app.py`), open your browser and go to:
+
+
+### 🎮 How to Use
+- Insert coins by dragging Rs.10 or Rs.50 tokens into the coin slot.
+- Select items using the arcade-style buttons (A–D and 1–4).
+- Click **VEND CART** to dispense your selected items.
+- Use **RESET** to clear the cart and start fresh.
+- Monitor the bottom dashboard for:
+  - Gross revenue
+  - Order volumes
+  - Top category sold
+  - Trigger refill option
+
+### Example Workflows
+- Insert Rs.50 → Vend Diet Coke  
+- Insert Rs.10 → Vend Fanta  
+- Insert Rs.60 → Vend Milkshake  
+
+---
 
 
